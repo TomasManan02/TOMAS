@@ -531,14 +531,22 @@
             </div>
 
             <div class="contact-box">
-                <form action="">
+                <form action="https://formsubmit.co/tomasmanan01@email.com" method="POST">
                     <h2 class="heading">Contact <span>Me!</span></h2>
                     <div class="field-box">
-                        <input type="text" placeholder="Full Name" required>
-                        <input type="email" placeholder="Email Address" required>
-                        <input type="text" placeholder="Phone Number" required>
-                        <input type="text" placeholder="Subject" required>
-                        <textarea name="text" placeholder="Your Message" required ></textarea>
+                        <input type="text" name="Name" placeholder="Full Name" required>
+                        <input type="email" name="Email" placeholder="Email Address" required>
+                        <input type="text" name="Phone" placeholder="Phone Number" required>
+                        <input type="text" name="_subject" placeholder="Subject" required>
+                        <textarea name="Message" placeholder="Your Message" required ></textarea>
+                        <!-- hidding -->
+                        <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+                        <input type="hidden" name="_subject" value="send new">
+                        <input type="hidden" name="_cc" value=" tomas1548123@gmail.com ">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="text" name="_honey" style="display:none">
+                        <input type="hidden" name="_template" value="box">
+
                     </div>
                     <button type="submit" class="btn">Send Message</button>
                 </form>
