@@ -654,15 +654,21 @@ section.active{
 .Portfolio-box .img-item img{
     display: block;
     width: 100%;
-    height: 45rem;
+    height: 40rem;
     object-fit: cover;
     border-radius: 1rem;
 }
 
 .Portfolio-box .navigation{ 
     text-align: center;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
 }
 
+.Portfolio-box .navigation .more{
+    font-size: 18px;
+}
 .Portfolio-box .navigation button{
     display: inline-flex;
     padding: 0.3rem;
@@ -774,6 +780,9 @@ section.active{
     html{
         font-size: 50%;
     }
+    .Portfolio-box .img-item {
+        height: 50rem;
+    }
 }
 
 @media screen and (max-width:992px){
@@ -784,9 +793,19 @@ section.active{
     section{
         padding: 10rem 4% 2rem;
     }
+    .Portfolio-box .img-item img{
+        width: 90%;
+        height: 35rem;
+    }
+    
 }
 
 @media screen and (max-width:810px){
+    .Portfolio-box .img-item img{
+        width: 75%;
+        height: 20rem;
+    }
+
     .contact-box .field-box{
         grid-template-columns: 1fr;
     }
@@ -847,6 +866,11 @@ section.active{
         order: 1;
     }
 
+    .Portfolio-box .navigation{ 
+        gap: 2rem;
+        flex-direction: column;
+    }
+
     .contact-box .field-box{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -866,6 +890,10 @@ section.active{
 @media screen and (max-width:450px){
     html{
         font-size: 45%;
+    }
+    .Portfolio-box .img-item img{
+        width: 75%;
+        height: 23rem;
     }
 }
 
@@ -887,6 +915,10 @@ section.active{
 
     .resume-list{
         height: 65rem;
+    }
+    .Portfolio-box .img-item img{
+        width: 75%;
+        height: 20rem;
     }
 
     .contact-box form{
